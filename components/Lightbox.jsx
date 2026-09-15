@@ -40,14 +40,14 @@ export default function Lightbox({ images, index, onClose, onPrev, onNext }) {
       aria-modal="true"
       aria-label={`${image.name} — enlarged photo`}
       onClick={onClose}
-      className="fixed inset-0 z-[60] flex items-center justify-center bg-ink/80 p-4 backdrop-blur-md sm:p-8"
+      className="fixed inset-0 z-[60] flex items-center justify-center bg-shell/92 p-4 backdrop-blur-xl sm:p-8"
     >
       <button
         ref={closeRef}
         type="button"
         onClick={onClose}
         aria-label="Close"
-        className="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full bg-white/90 text-ink transition-all duration-300 hover:scale-105 hover:bg-white sm:right-6 sm:top-6"
+        className="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full bg-white text-ink shadow-soft ring-1 ring-blush-100 transition-all duration-300 hover:scale-105 hover:bg-white sm:right-6 sm:top-6"
       >
         <CloseIcon className="h-5 w-5" />
       </button>
@@ -61,7 +61,7 @@ export default function Lightbox({ images, index, onClose, onPrev, onNext }) {
               onPrev();
             }}
             aria-label="Previous photo"
-            className="absolute left-3 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/85 text-ink transition-all duration-300 hover:scale-105 hover:bg-white sm:left-6 sm:h-12 sm:w-12"
+            className="absolute left-3 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-ink shadow-soft ring-1 ring-blush-100 transition-all duration-300 hover:scale-105 hover:bg-white sm:left-6 sm:h-12 sm:w-12"
           >
             <ChevronLeftIcon className="h-5 w-5" />
           </button>
@@ -72,7 +72,7 @@ export default function Lightbox({ images, index, onClose, onPrev, onNext }) {
               onNext();
             }}
             aria-label="Next photo"
-            className="absolute right-3 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white/85 text-ink transition-all duration-300 hover:scale-105 hover:bg-white sm:right-6 sm:h-12 sm:w-12"
+            className="absolute right-3 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-white text-ink shadow-soft ring-1 ring-blush-100 transition-all duration-300 hover:scale-105 hover:bg-white sm:right-6 sm:h-12 sm:w-12"
           >
             <ChevronRightIcon className="h-5 w-5" />
           </button>
@@ -96,12 +96,12 @@ export default function Lightbox({ images, index, onClose, onPrev, onNext }) {
           fetchPriority="high"
           // w-full (not w-auto) keeps the box measurable before the image
           // decodes — an auto-width, not-yet-loaded image lays out at 0x0.
-          className="h-auto max-h-[74vh] w-full max-w-full rounded-3xl object-contain shadow-lift"
+          className="h-auto max-h-[74vh] w-full max-w-full object-contain drop-shadow-[0_20px_36px_rgba(217,115,141,0.28)]"
         />
-        <figcaption className="mt-4 text-center text-sm text-white/90">
-          <span className="font-serif text-lg text-white">{image.name}</span>
+        <figcaption className="mt-4 text-center text-sm text-ink-soft">
+          <span className="font-serif text-lg text-ink">{image.name}</span>
           {hasSiblings && (
-            <span className="mt-1 block text-xs tracking-[0.18em] text-white/60 uppercase">
+            <span className="mt-1 block text-xs tracking-[0.18em] text-blush-500 uppercase">
               {index + 1} of {images.length}
             </span>
           )}

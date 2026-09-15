@@ -17,15 +17,15 @@ export default function About() {
             className="animate-float-slow absolute -right-2 -top-4 hidden h-10 w-10 rotate-12 text-blush-200 lg:block"
             aria-hidden="true"
           />
-          <div className="relative overflow-hidden rounded-[2.5rem] bg-blush-50 shadow-soft ring-1 ring-blush-100">
+          <div className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-b from-blush-50/80 to-white p-6 ring-1 ring-blush-100">
             <Image
-              src="/images/bouquet-sunflower-tulips.jpg"
-              alt="Handmade sunflower and pastel tulip bundle resting in a glass jar beside warm string lights"
-              width={720}
-              height={840}
+              src="/images/bouquet-lilac-daisy.webp"
+              alt="Handmade white daisy bouquet in lilac wrapping with a cream satin bow"
+              width={808}
+              height={1071}
               loading="lazy"
               sizes="(max-width: 1024px) 92vw, 45vw"
-              className="h-[24rem] w-full object-cover object-center sm:h-[30rem]"
+              className="h-[22rem] w-full object-contain drop-shadow-[0_16px_28px_rgba(217,115,141,0.2)] sm:h-[28rem]"
             />
           </div>
 

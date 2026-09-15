@@ -38,9 +38,9 @@ export const metadata = {
     locale: 'en_US',
     images: [
       {
-        url: '/images/bouquet-pink-butterfly.jpg',
-        width: 720,
-        height: 660,
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
         alt: 'Handmade bouquet of pale pink roses in a white wrap decorated with butterflies',
       },
     ],
@@ -49,7 +49,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Crafts by Criselyn | Handmade Crochet Bouquets',
     description: site.description,
-    images: ['/images/bouquet-pink-butterfly.jpg'],
+    images: ['/og-image.jpg'],
   },
   robots: {
     index: true,

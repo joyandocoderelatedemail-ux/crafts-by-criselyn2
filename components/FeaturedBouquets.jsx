@@ -23,7 +23,9 @@ export default function FeaturedBouquets() {
               delay={i * 110}
               className="group flex flex-col overflow-hidden rounded-[1.75rem] border border-blush-100 bg-white shadow-soft transition-all duration-500 ease-out hover:-translate-y-2 hover:border-blush-200 hover:shadow-lift"
             >
-              <div className="relative overflow-hidden bg-blush-50">
+              {/* Cut-outs sit on a soft tint and must not be cropped, so the
+                  image is contained rather than covering the frame. */}
+              <div className="relative overflow-hidden bg-gradient-to-b from-blush-50 to-white p-4">
                 <Image
                   src={bouquet.src}
                   alt={bouquet.alt}
@@ -31,11 +33,7 @@ export default function FeaturedBouquets() {
                   height={bouquet.height}
                   loading="lazy"
                   sizes="(max-width: 640px) 92vw, (max-width: 1024px) 46vw, 23vw"
-                  className="aspect-[4/5] w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-110"
-                />
-                <div
-                  aria-hidden="true"
-                  className="absolute inset-0 bg-gradient-to-t from-blush-700/15 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                  className="aspect-[4/5] w-full object-contain drop-shadow-[0_10px_18px_rgba(217,115,141,0.18)] transition-transform duration-[900ms] ease-out group-hover:scale-[1.07]"
                 />
               </div>
 

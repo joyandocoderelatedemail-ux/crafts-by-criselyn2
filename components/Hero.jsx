@@ -83,16 +83,16 @@ export default function Hero() {
           />
 
           <div className="hero-image-in relative mx-auto max-w-md lg:max-w-none">
-            <div className="relative overflow-hidden rounded-[2.5rem] bg-blush-50 shadow-lift ring-1 ring-blush-100">
+            <div className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-b from-white/70 to-blush-50/70 p-5 ring-1 ring-blush-100/70">
               <Image
-                src="/images/bouquet-pink-butterfly.jpg"
+                src="/images/bouquet-pink-butterfly.webp"
                 alt="Handmade bouquet of pale pink roses in a white wrap decorated with butterflies"
-                width={720}
-                height={660}
+                width={624}
+                height={570}
                 loading="eager"
                 fetchPriority="high"
                 sizes="(max-width: 1024px) 92vw, 45vw"
-                className="h-[22rem] w-full object-cover object-center sm:h-[28rem] lg:h-[32rem]"
+                className="h-[20rem] w-full object-contain drop-shadow-[0_18px_30px_rgba(217,115,141,0.22)] sm:h-[26rem] lg:h-[30rem]"
               />
             </div>
 
