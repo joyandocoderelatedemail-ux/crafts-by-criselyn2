@@ -1,0 +1,181 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-serif: var(--font-cormorant), ui-serif, Georgia, 'Times New Roman', serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  /* Soft blush pink scale — the brand accent. */
+  --color-blush-50: #fff7f9;
+  --color-blush-100: #fde9ee;
+  --color-blush-200: #f9d5de;
+  --color-blush-300: #f2b9c7;
+  --color-blush-400: #e693a8;
+  --color-blush-500: #d9738d;
+  --color-blush-600: #c15a76;
+  --color-blush-700: #9e4760;
+
+  /* Very subtle beige / cream accents. */
+  --color-cream: #fbf5f0;
+  --color-shell: #fffafb;
+
+  /* Deep charcoal text, with a warm cast so it sits well against pink. */
+  --color-ink: #38313a;
+  --color-ink-soft: #6b6068;
+
+  --shadow-soft: 0 10px 40px -12px rgb(217 115 141 / 0.18);
+  --shadow-lift: 0 22px 60px -18px rgb(217 115 141 / 0.32);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Keep anchored sections clear of the sticky navbar. */
+    scroll-padding-top: 5.5rem;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    /* Guard against any stray full-bleed decoration causing sideways scroll. */
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background-color: var(--color-blush-200);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-blush-500);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  /* Scroll-reveal: hidden until the element is observed into view. */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition:
+      opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal[data-visible='true'] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Gentle drift for the decorative petals behind the hero. */
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(0, -18px, 0) rotate(6deg);
+  }
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(12px, -14px, 0) scale(1.05);
+  }
+}
+
+@keyframes hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes hero-image-in {
+  from {
+    opacity: 0;
+    transform: scale(1.06);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes lightbox-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 11s ease-in-out infinite;
+}
+
+.animate-drift {
+  animation: drift 14s ease-in-out infinite;
+}
+
+/* Hero entrance. Elements start hidden and are revealed by the animation so
+   there is no flash of unstyled position on load. */
+.hero-in {
+  opacity: 0;
+  animation: hero-in 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.hero-image-in {
+  opacity: 0;
+  animation: hero-image-in 1.3s cubic-bezier(0.22, 1, 0.36, 1) 0.15s forwards;
+}
+
+.lightbox-in {
+  animation: lightbox-in 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Respect the visitor's motion preference: no drifting, no entrances. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .reveal,
+  .hero-in,
+  .hero-image-in {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

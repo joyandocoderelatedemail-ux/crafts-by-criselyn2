@@ -1,0 +1,568 @@
+Create a modern, elegant, responsive **Vercel-compatible landing page** for a crochet bouquet business called:
+
+# Crafts by Criselyn
+
+The website is for a small handmade crochet bouquet business. The overall design should feel **cute, elegant, warm, feminine, handmade, and premium**, while still being clean and modern.
+
+## TECHNICAL REQUIREMENTS
+
+* Make the website fully compatible with **Vercel deployment**.
+* Use a modern frontend stack such as **Next.js + React + Tailwind CSS**.
+* Make it fully responsive for:
+
+  * Desktop
+  * Tablet
+  * Mobile
+* Optimize the website for fast loading and good performance.
+* Use reusable components.
+* Keep the code clean and organized.
+* Do NOT require a backend or database for the landing page.
+* Do NOT create unnecessary authentication or admin functionality.
+* The website should work immediately after installing dependencies and running the project.
+* Make sure all images use proper responsive sizing and do not break the layout.
+* Use the existing photos located in the project/assets folder. **Do not replace the existing product photos with random stock images.**
+* Automatically organize the provided product photos into attractive product/gallery sections.
+
+## BRAND
+
+Business Name:
+
+**Crafts by Criselyn**
+
+Primary theme:
+
+**White + Soft Pink**
+
+Suggested visual direction:
+
+* White backgrounds
+* Soft blush pink
+* Light rose/pink accents
+* Very subtle beige/cream accents
+* Dark gray text
+* Elegant typography
+* Soft shadows
+* Rounded cards
+* Lots of whitespace
+* Subtle floral/crochet-inspired decorative elements
+
+The website should NOT look like a generic ecommerce template.
+
+It should feel like a **handmade boutique brand**.
+
+---
+
+# LANDING PAGE STRUCTURE
+
+## 1. NAVIGATION BAR
+
+Create a clean sticky navigation bar.
+
+Logo/brand:
+
+**Crafts by Criselyn**
+
+Navigation:
+
+* Home
+* Bouquets
+* About
+* Why Choose Us
+* Contact
+
+Add a prominent button:
+
+**Order Now**
+
+The navbar should have a subtle blur/glass effect when scrolling.
+
+On mobile, use a clean animated hamburger menu.
+
+---
+
+# 2. HERO SECTION
+
+Create a visually impressive hero section.
+
+Main heading:
+
+**Handmade with Love, Crafted to Last.**
+
+Supporting text:
+
+**Beautiful crochet bouquets handmade with care — perfect for birthdays, anniversaries, gifts, special occasions, or simply showing someone you care.**
+
+Primary CTA:
+
+**Browse Bouquets**
+
+Secondary CTA:
+
+**Order Now**
+
+Use the best existing crochet bouquet photo as the hero image.
+
+Create a premium split-screen layout:
+
+LEFT:
+
+* Small badge: "Handmade Crochet Bouquets"
+* Large headline
+* Description
+* CTA buttons
+
+RIGHT:
+
+* Large beautiful bouquet image
+* Soft pink decorative shapes
+* Subtle floating floral/crochet-inspired elements
+
+Add subtle animation when the page loads.
+
+Animations should be elegant and smooth, not excessive.
+
+Examples:
+
+* Fade-up text
+* Image fade/scale
+* Floating decorative elements
+* Gentle background movement
+
+---
+
+# 3. TRUST / BRAND HIGHLIGHTS
+
+Immediately below the hero section, add a small feature strip with 3–4 items:
+
+**100% Handmade**
+
+Carefully crafted by hand.
+
+**Made with Love**
+
+Every bouquet is created with care.
+
+**Perfect for Gifting**
+
+A memorable gift for every occasion.
+
+**Custom Orders**
+
+Create something special for someone special.
+
+Use minimal icons with soft pink accents.
+
+---
+
+# 4. FEATURED BOUQUETS
+
+Section title:
+
+**Our Handmade Bouquets**
+
+Subtitle:
+
+**Little bundles of happiness, made stitch by stitch.**
+
+Create a beautiful responsive product gallery using the existing photos in the folder.
+
+Each bouquet card should contain:
+
+* Product image
+* Bouquet name
+* Short description
+* Price area if a price can be determined from the provided information
+* "View Details" or "Order Now" button
+
+IMPORTANT:
+
+Do not invent product prices.
+
+If prices are not provided, use:
+
+**Message us for price**
+
+Each card should have:
+
+* Rounded corners
+* Soft shadow
+* Image hover zoom
+* Smooth hover animation
+* Elegant pink accents
+
+On desktop, use a 3-column or 4-column grid depending on the number of available photos.
+
+On mobile, use a 1-column layout.
+
+---
+
+# 5. IMAGE SHOWCASE
+
+Create an attractive visual gallery using the remaining uploaded crochet photos.
+
+Make this section feel like an Instagram/Pinterest-style handmade gallery.
+
+Use different image sizes to create a visually interesting masonry-style layout.
+
+Add subtle hover effects.
+
+When an image is clicked, open a beautiful lightbox/modal showing the larger image.
+
+The modal should include:
+
+* Large image
+* Close button
+* Previous/next controls if appropriate
+
+---
+
+# 6. ABOUT CRAFTS BY CRISELYN
+
+Create an elegant split section.
+
+Use one of the existing crochet photos on one side.
+
+Content:
+
+### About Crafts by Criselyn
+
+**Crafted by hand. Made with heart.**
+
+Crafts by Criselyn creates handmade crochet bouquets designed to turn special moments into lasting memories.
+
+Unlike traditional flowers, crochet bouquets can be treasured for a long time — making them a thoughtful and unique gift for someone special.
+
+Keep this section warm and personal without making unsupported claims about the business.
+
+Add a button:
+
+**Discover Our Bouquets**
+
+---
+
+# 7. WHY CHOOSE CROCHET BOUQUETS?
+
+Create a visually attractive section explaining the benefits.
+
+Title:
+
+**A Bouquet That Lasts Beyond the Moment**
+
+Create 4 cards:
+
+### Long-Lasting
+
+A beautiful keepsake that can be enjoyed long after the special occasion.
+
+### Handmade
+
+Each piece carries the charm of something carefully crafted by hand.
+
+### Unique
+
+A creative alternative to traditional flower bouquets.
+
+### Meaningful Gift
+
+Perfect for expressing love, appreciation, congratulations, or friendship.
+
+Use small elegant illustrations/icons.
+
+---
+
+# 8. PERFECT FOR EVERY OCCASION
+
+Create a pink-background section.
+
+Title:
+
+**Made for Every Special Moment**
+
+Display cards for:
+
+🎁 Birthdays
+💗 Anniversaries
+🌸 Valentine's Day
+🎓 Graduations
+💐 Mother's Day
+✨ Just Because
+
+Do not use excessive emojis throughout the website. Keep the overall website elegant.
+
+Each card can use an appropriate icon or subtle decorative illustration.
+
+---
+
+# 9. ORDER SECTION
+
+Create a prominent call-to-action section.
+
+Heading:
+
+**Ready to Give Something Special?**
+
+Text:
+
+**Choose a handmade crochet bouquet and make someone's day a little more beautiful.**
+
+Buttons:
+
+**Order Now**
+
+**Message Us**
+
+The buttons should connect to the appropriate contact options.
+
+---
+
+# 10. CONTACT SECTION
+
+Create a clean contact section.
+
+Heading:
+
+**Let's Create Something Special**
+
+Display:
+
+**Facebook**
+
+Crafts by Criselyn
+
+Facebook:
+https://www.facebook.com/criselyn.tullao
+
+Make the Facebook button clickable.
+
+Also display:
+
+**Contact Number**
+
+09630478946
+
+Make the phone number clickable on mobile using:
+
+tel:09630478946
+
+Add a button:
+
+**Message Us on Facebook**
+
+which opens the Facebook page.
+
+---
+
+# 11. FOOTER
+
+Create an elegant footer.
+
+Brand:
+
+**Crafts by Criselyn**
+
+Tagline:
+
+**Handmade with love, one stitch at a time.**
+
+Links:
+
+* Home
+* Bouquets
+* About
+* Contact
+
+Social:
+
+* Facebook
+
+Contact:
+09630478946
+
+Facebook:
+https://www.facebook.com/criselyn.tullao
+
+Copyright:
+
+**© 2026 Crafts by Criselyn. All rights reserved.**
+
+---
+
+# ANIMATION REQUIREMENTS
+
+Use modern, subtle animations throughout the website.
+
+Recommended:
+
+* Fade-in on page load
+* Scroll reveal animations
+* Image fade/scale
+* Card hover lift
+* Image hover zoom
+* Button hover transitions
+* Smooth scrolling
+* Navbar transition on scroll
+* Floating decorative crochet/flower elements
+* Gentle hero image animation
+* Lightbox transition
+
+Animations should feel:
+
+**soft + elegant + premium**
+
+Avoid:
+
+* Excessive bouncing
+* Fast flashing animations
+* Distracting effects
+* Too many simultaneous animations
+
+Use CSS animations or a lightweight animation library such as Framer Motion if appropriate.
+
+Respect `prefers-reduced-motion`.
+
+---
+
+# RESPONSIVE DESIGN
+
+The website must look excellent on mobile.
+
+Mobile layout should include:
+
+* Compact navbar
+* Hamburger menu
+* Full-width hero image
+* Stacked CTA buttons
+* Single-column product cards
+* Touch-friendly buttons
+* Responsive gallery
+* Properly sized typography
+* No horizontal scrolling
+
+Pay special attention to iPhone-sized screens.
+
+---
+
+# IMAGE HANDLING
+
+IMPORTANT:
+
+There are already crochet bouquet photos inside the project folder.
+
+Use those photos throughout the website.
+
+Do not download random stock images.
+
+Create a reusable image/product data structure so additional bouquet photos can easily be added later.
+
+Use:
+
+* Lazy loading where appropriate
+* Proper image dimensions
+* Object-fit / responsive cropping
+* Image optimization supported by the framework
+* Descriptive alt text
+
+If filenames are unclear, use meaningful display names such as:
+
+"Crochet Bouquet"
+"Handmade Crochet Flowers"
+"Pink Crochet Bouquet"
+
+Do not expose ugly filenames to visitors.
+
+---
+
+# SEO
+
+Add proper SEO metadata:
+
+Title:
+
+**Crafts by Criselyn | Handmade Crochet Bouquets**
+
+Description:
+
+**Beautiful handmade crochet bouquets crafted with love by Crafts by Criselyn. Perfect for birthdays, anniversaries, gifts, graduations, and special occasions.**
+
+Include appropriate:
+
+* Open Graph metadata
+* Favicon support
+* Semantic HTML
+* Image alt text
+
+---
+
+# DESIGN DETAILS
+
+The final website should resemble a **premium handmade flower boutique** rather than a standard ecommerce website.
+
+Use:
+
+* Elegant serif font for major headings
+* Clean modern sans-serif font for body text
+* Soft pink accent colors
+* White backgrounds
+* Rounded corners
+* Subtle shadows
+* Large photography
+* Generous spacing
+* Elegant typography hierarchy
+
+Suggested color direction:
+
+Primary:
+Soft blush pink
+
+Secondary:
+Rose pink
+
+Background:
+White / very light pink
+
+Text:
+Deep charcoal
+
+Accent:
+Muted rose
+
+Do not overuse pink. White should remain the dominant background.
+
+---
+
+# USER EXPERIENCE
+
+The main goal is to make visitors immediately:
+
+1. Understand that Crafts by Criselyn sells handmade crochet bouquets.
+2. See beautiful bouquet photos.
+3. Browse the available designs.
+4. Understand why crochet bouquets are special.
+5. Easily contact the seller.
+6. Easily place an order through Facebook/message.
+
+Make the **Order Now** and **Message Us** actions highly visible without making the website feel aggressive or overly commercial.
+
+---
+
+# IMPORTANT IMPLEMENTATION RULES
+
+Before finishing:
+
+* Inspect all existing image files in the project.
+* Use the existing photos.
+* Do not delete or overwrite the photos.
+* Make sure every image path is correct.
+* Make sure there are no broken images.
+* Test all navigation links.
+* Test Facebook link.
+* Test telephone link.
+* Test mobile navigation.
+* Test image lightbox.
+* Test responsive layouts.
+* Remove unused dependencies.
+* Make sure there are no console errors.
+* Make sure the project builds successfully.
+* Make sure it can be deployed directly to Vercel.
+
+The final result should be a **polished, production-ready landing page for Crafts by Criselyn**, with a beautiful white-and-pink handmade aesthetic and smooth modern animations.
